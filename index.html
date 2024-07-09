@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PyScript Example</title>
+    <link
+      rel="stylesheet"
+      href="https://pyscript.net/releases/2024.7.1/core.css"
+    />
+    <script
+      type="module"
+      src="https://pyscript.net/releases/2024.7.1/core.js"
+    ></script>
+  </head>
+  <body>
+    <div id="container">
+      <form id="input-form">
+        <input type="text" placeholder="String1" id="string1" /><br />
+        <input type="text" placeholder="String2" id="string2" /><br />
+        <input type="text" placeholder="String3" id="string3" /><br />
+        <button py-click="submit_form">Submit</button>
+      </form>
+      <div id="output"></div>
+    </div>
+    <script type="py" src="./main.py"></script>
+  </body>
+</html>
